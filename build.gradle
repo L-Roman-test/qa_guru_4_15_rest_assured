@@ -9,10 +9,12 @@ repositories {
 
 def allureVersion = "2.13.8",
     junitVersion = "5.7.1",
-    restAssuredVersion = "4.3.1"
+    restAssuredVersion = "4.3.1",
+    aspectjVersion = "1.9.6"
 
 dependencies {
     testImplementation(
+            "org.aspectj:aspectjweaver:$aspectjVersion",
             "io.rest-assured:rest-assured:$restAssuredVersion",
             "io.qameta.allure:allure-java-commons:$allureVersion",
             "io.qameta.allure:allure-rest-assured:$allureVersion",
